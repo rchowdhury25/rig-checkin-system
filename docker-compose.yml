@@ -1,0 +1,38 @@
+services:
+  db:
+    image: postgres:17-alpine3.22
+    restart: always
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASS}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  web:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    volumes:
+      - ./backend:/app
+      - staticvol:/app/staticfiles
+      - templates:/app/templates
+    restart: always
+    command: gunicorn myproject.wsgi:application --bind 0.0.0.0:8000 --workers 3
+    ports:
+      - '8000:8000'
+    environment:
+      - DB_HOST=db
+      - DB_NAME=${DB_NAME}
+      - DB_USER=${DB_USER}
+      - DB_PASS=${DB_PASS}
+      - SECRET_KEY=${SECRET_KEY}
+      - ALLOWED_HOSTS=${ALLOWED_HOSTS}
+      - DEBUG=${DEBUG}
+    depends_on:
+      - db
+
+volumes:
+  pgdata:
+  staticvol:
+  templates:
