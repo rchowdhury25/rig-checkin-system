@@ -7,7 +7,7 @@ export const syncWithServer = async () => {
   if (unsynced.length === 0) return;
 
   try {
-    const res = await axios.post('http://127.0.0.1:8000/api/sync_bulk', {
+    const res = await axios.post('/api/sync_bulk', {
       records: unsynced.map(({ synced, ...r }) => r)
     });
 

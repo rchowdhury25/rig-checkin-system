@@ -26,17 +26,25 @@ export default function CheckinForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2>Check-In/Out</h2>
-      <input value={name} onChange={e => setName(e.target.value)} placeholder="Name" required />
-      <select value={userType} onChange={e => setUserType(e.target.value)}>
-        <option value="employee">Employee</option>
-        <option value="visitor">Visitor</option>
-      </select>
-      <select value={action} onChange={e => setAction(e.target.value)}>
-        <option value="check-in">Check-in</option>
-        <option value="check-out">Check-out</option>
-      </select>
-      <button type="submit">Submit</button>
+      <div className="card">
+        <div className="card-header">
+          <div>
+            <div className="detail-title">Employee/Visitor Checkin Checkout</div>
+          </div>
+        </div>
+        <div className="card-body">
+          <input value={name} onChange={e => setName(e.target.value)} placeholder="Name" required />
+          <select value={userType} onChange={e => setUserType(e.target.value)}>
+            <option value="employee">Employee</option>
+            <option value="visitor">Visitor</option>
+          </select>
+          <select value={action} onChange={e => setAction(e.target.value)}>
+            <option value="check-in">Check-in</option>
+            <option value="check-out">Check-out</option>
+          </select>
+          <button type="submit">Submit</button>
+        </div>
+      </div>
     </form>
   );
 }
