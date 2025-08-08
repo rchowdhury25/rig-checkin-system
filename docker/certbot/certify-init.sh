@@ -12,7 +12,6 @@ done
 echo "Getting certificate..."
 
 certbot certonly \
-    --staging \  
     --webroot \
     --webroot-path "/vol/www/" \
     -d "${DOMAIN}" \
