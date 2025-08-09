@@ -1,198 +1,54 @@
-body {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: #f0f2f5;
-    padding: 2px;
+.h1 { 
+    font-size: 28px; 
+    font-weight: 800; 
+    margin: 0; 
 }
 
-.app-container {
-    display: flex;
-    min-height: 900px;
+.h2 { 
+    font-size: 22px; 
+    font-weight: 700; 
+    margin: 0 0 4px; 
 }
 
-.dark-industrial {
-    background: linear-gradient(135deg, #2D3748 0%, #4A5568 100%);
-    color: #FFFFFF;
+.h3 { 
+    font-size: 18px; 
+    font-weight: 700; 
+    margin: 0; 
 }
 
-.sidebar {
-    width: 350px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.h4 { 
+    font-size: 16px; 
+    font-weight: 600; 
+    margin: 0; 
 }
 
-.detail-card {
-    padding: 15px;
-    border-radius: 8px;
-    border: 1.5px solid;
+.big { 
+    font-size: 24px; 
+    font-weight: 700; 
 }
 
-.theme-container {
-    margin-bottom: 40px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+.small { 
+    font-size: 13px; 
 }
 
-.theme-header {
-    padding: 15px 20px;
-    background: #333;
-    color: white;
-    font-weight: 600;
-    font-size: 18px;
+.tiny { 
+    font-size: 12px; 
 }
 
-.main-content {
-    flex: 1;
-    padding: 30px;
+.strong { 
+    font-weight: 600; 
 }
 
-.app-title {
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
+.muted { 
+    color: var(--muted); 
 }
 
-.table-container {
-    border-radius: 8px;
-    overflow: hidden;
+.text-muted { 
+    color: var(--muted); 
 }
 
-.table-header {
-    display: grid;
-    grid-template-columns: 100px 150px 200px 200px 150px 150px 150px 150px;
-    gap: 25px;
-    padding: 15px;
-    font-weight: 600;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.75px;
-}
-
-.table-row {
-    display: grid;
-    grid-template-columns: 100px 150px 200px 200px 150px 150px 150px 150px;
-    gap: 25px;
-    padding: 15px;
-    border-bottom: 1px solid;
-    font-size: 14px;
-}
-
-.pagination {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.page-btn {
-    padding: 8px 12px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-
-
-/* Dark Industrial Theme */
-.dark-industrial .main-content {
-    background: #1A202C;
-    color: #FFFFFF
-}
-
-.dark-industrial .table-container {
-    background: #2D3748;
-}
-
-.dark-industrial .table-header {
-    background: #1A202C;
-    color: #FF8C00;
-}
-
-.dark-industrial .table-row {
-    background: #2D3748;
-    border-color: #4A5568;
-    color: #E2E8F0;
-}
-
-
-.bottom-footer {
-    position: 'fixed';
-    bottom: '0';
-    left: '0';
-    right: '0';
-    background: linear-gradient(135deg, #2D3748 0%, #4A5568 100%);
-    padding: 15px 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    display: 'flex';
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;  
-}
-
-.button-group{
-  display: flex;
-  gap: 16px;
-  align-items: right;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.sync-livescan, .sync-ongoing, .cancel-sync {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 14px 24px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #000000;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.sync-livescan, .sync-ongoing {
-    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
-    background: #FF8C00;
-    border: 1px solid #ff6b35;
-}
-
-.sync-livescan {
-    cursor: not-pointer;
-    opacity: 1;
-}
-
-.sync-ongoing {
-    cursor: not-allowed;
-    opacity: 0.6;
-}
-
-.cancel-sync {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: #FFFFFF
-}
-
-.pagination-btn {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: white;
-    padding: 0.75rem 1rem;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
-}
-
-.pagination-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-2px);
-}
+.mb-12{margin-bottom:12px;} 
+.mb-16{margin-bottom:16px;} 
+.mt-4{margin-top:4px;} 
+.mt-8{margin-top:8px;} 
+.mt-16{margin-top:16px;}

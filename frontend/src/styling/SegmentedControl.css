@@ -1,0 +1,7 @@
+.segmented{ display:flex; gap:8px; margin-top:8px; }
+.seg-btn{
+  padding:8px 12px; border-radius:8px; border:1px solid #e5e7eb; background:#f3f4f6; color:#4b5563;
+  font-weight:600; cursor:pointer;
+}
+.seg-btn:hover{ background:#e5e7eb; }
+.seg-btn-active{ background: var(--blue); color:#fff; border-color: var(--blue); }

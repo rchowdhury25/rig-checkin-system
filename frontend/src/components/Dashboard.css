@@ -1,0 +1,67 @@
+.page {
+    min-height: 100vh; 
+    padding:16px
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.header{
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  margin-bottom: 16px;
+  display:flex; 
+  align-items:center; 
+  justify-content:space-between;
+}
+
+.hoverable{ 
+    transition:.2s transform, 
+    box-shadow; 
+    cursor:pointer; 
+}
+.hoverable:hover{ 
+    transform: translateY(-2px); 
+    box-shadow: 0 10px 24px rgba(0,0,0,.08); 
+}
+
+/* Avatars */
+.avatar{ width:40px; height:40px; border-radius:999px; display:flex; align-items:center; justify-content:center; font-weight:700; }
+.avatar.blue{ background:#3b82f6; color:#fff; }
+.avatar-text{ font-size:12px; }
+
+/* Activity list */
+.activity{
+  display:flex; align-items:center; justify-content:space-between;
+  background:#f9fafb; padding:12px; border-radius:10px;
+}
+.activity-left{ display:flex; align-items:center; gap:12px; }
+.activity-right{ text-align:right; }
+
+
+/* Badges */
+.badge{
+  display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; font-weight:600;
+  background:#f3f4f6; color:#374151;
+}
+.badge-visitor{ background:#fce7f3; color:#9d174d; }
+.badge-employee{ background:#dcfce7; color:#166534; }
+.badge-vendor{ background:#f3e8ff; color:#6b21a8; }
+
+/* Status */
+.status{ display:inline-flex; align-items:center; gap:6px; }
+.status-in{ color:#16a34a; }
+.status-out{ color:#6b7280; }
+.status-text{ text-transform: capitalize; }
+
+/* Form */
+.label{ display:block; font-size:13px; font-weight:600; color:#374151; margin-bottom:6px; }
+.input{
+  width:100%; padding:10px; border:1px solid var(--border); border-radius:8px;
+  outline:none; transition:.2s border, .2s box-shadow;
+}
+.input:focus{ border-color: var(--blue); box-shadow: 0 0 0 3px rgba(37,99,235,.15); }

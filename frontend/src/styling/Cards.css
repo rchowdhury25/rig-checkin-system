@@ -1,0 +1,70 @@
+.card{
+  background: var(--card);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.card.headless{padding:0;}
+.card.headless > * { padding:20px; }
+
+.card-pink{ 
+    border:2px solid #f9c; 
+    background: var(--pink-soft); 
+}
+.card-green{ 
+    border:2px solid #bbf7d0; 
+    background: #f0fdf4; 
+}
+.card-purple{ 
+    border:2px solid #e9d5ff; 
+    background: var(--purple-soft); 
+}
+
+.card-head{ 
+    display:flex; 
+    align-items:center; 
+    justify-content:space-between; 
+    margin-bottom:12px; 
+}
+
+.card-stats{ 
+    display:flex; 
+    align-items:center; 
+    justify-content:space-between; 
+}
+
+.card-stats .left{ 
+    display:flex; 
+    align-items:center; 
+    gap:12px; 
+}
+
+.card-stats .right{ 
+    text-align:right; 
+}
+
+.pill{ 
+    padding:8px; 
+    border-radius:999px; 
+    display:inline-flex; 
+    align-items:center; 
+    justify-content:center; 
+}
+
+.pill-pink{ 
+    background: var(--pink); 
+}
+
+.pill-green{ 
+    background: var(--green); 
+}
+
+.pill-purple{ 
+    background: var(--purple); 
+}
+
+.white{ 
+    color:#fff; 
+}

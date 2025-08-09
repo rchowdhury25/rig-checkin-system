@@ -1,0 +1,14 @@
+.panel{ background:#f9fafb; border-radius:10px; padding:16px; }
+.panel-title{ font-size:16px; font-weight:700; margin:0 0 12px; }
+.divider{ border-top:1px solid #e5e7eb; margin:12px 0; }
+.stat-list{ display:flex; flex-direction:column; gap:10px; }
+.stat-row{ display:flex; align-items:center; justify-content:space-between; }
+.stat-left{ display:flex; align-items:center; gap:8px; }
+.total-row{ display:flex; align-items:center; justify-content:space-between; background:#f3f4f6; padding:8px 10px; border-radius:8px; }
+.dot{ width:10px; height:10px; border-radius:2px; }
+.dot-pink{ background:#ec4899; }
+.dot-green{ background:#22c55e; }
+.dot-purple{ background:#9333ea; }
+
+.bordered{ border:1px solid #e5e7eb; background:#fff; }
+.chart-wrap{ height:320px; }
